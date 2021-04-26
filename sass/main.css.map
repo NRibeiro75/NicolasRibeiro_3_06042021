@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACCyB,UAAU;AACT,QAAQ;AACT,QAAQ;AAIX,mBAAmB;AACjB,qBAAqB;ACR7C,AAAA,MAAM,CAAA;EACF,gBAAgB,EDOL,OAAO;CCNrB",
+    "sources": [
+        "main.scss",
+        "utils/_variables.scss",
+        "layout/_footer.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
