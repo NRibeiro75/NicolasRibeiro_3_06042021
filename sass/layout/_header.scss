@@ -1,0 +1,67 @@
+//---\\---HEADER HOME PAGE---\\---//
+.logo {
+    font-family: $font-logo;
+    font-size: 30px;
+    text-align: center;
+}
+
+.header {
+    background-color: $color-grey;
+
+    .map {
+        background-color: $color-localisation;
+        height: 50px;
+        box-shadow: inset 0px 2px 2px $color-shadow;
+        line-height: 50px;
+        // text-align: center;
+        font-size: 16px;
+        font-weight: 900;
+
+        & i.fas.fa-map-marker-alt {
+            padding-right: 18px;
+            margin-left: 104px;
+        }
+    }
+}
+
+.description {
+    margin: 48px;
+    display: flex;
+    flex-direction: column;
+
+    .description-title {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 900;
+    }
+
+    .presentation {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+}
+
+//---\\---//---\\---//---\\---//---\\
+
+//---\\---HEADER MENU PAGE---\\---//
+.header_pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 12px;
+
+    i.fas.fa-arrow-left {
+        position: absolute;
+        left: 23px;
+        top: 26px;
+        color: $color-black;
+    }
+
+    .header-logo {
+        width: 165px;
+        margin-top: 23px;
+    }
+}
+
+//---\\---//---\\---//---\\---//---\\

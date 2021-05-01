@@ -1,0 +1,30 @@
+//GENERAL//
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body{
+    max-width: 375px;
+    align-items:center;
+}
+ul {
+    list-style-type: none;
+  }
+.vignette img{
+    width: 335px;
+    height: 174px;
+    object-fit: cover;
+}
+a{
+    text-decoration:none;
+}
+
+h1,h2,span,p,li{
+    font-family: $font-text;
+}
+i.far.fa-heart{
+    font-size:21px;
+}

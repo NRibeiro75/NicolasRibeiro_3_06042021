@@ -1,0 +1,48 @@
+@import "../utils/mixins";
+//INFOS//
+#infos {
+    display: flex;
+    flex-direction: column;
+
+    ul {
+        margin-left: 32px;
+        margin-right: 20px;
+    }
+}
+
+.Fonctionnement {
+    margin-left: 21px;
+    margin-bottom: 32px;
+}
+
+.info {
+    background-color: $color-grey;
+    margin-bottom: 21px;
+    height: 24px;
+    border-radius: 20px;
+    line-height: 24px;
+    display: flex;
+    padding: 24px;
+    @include infos-hover;
+    @include infos-shadow;
+
+    span {
+        background: $color-primary;
+        display: flex;
+        justify-content: center;
+        width: 24px;
+        border-radius: 50px;
+        height: 24px;
+        align-items: center;
+        position: relative;
+        left: -35px;
+        color: $color-white;
+    }
+
+    i {
+        position: relative;
+        left: -12px;
+        line-height: 24px;
+        padding-right: 10px;
+    }
+}

@@ -1,0 +1,218 @@
+@import "../utils/mixins";
+@import "../utils/keyframes";
+
+//---\\---MAIN HOME PAGE---\\---//
+.main {
+    background: #f6f6f6;
+
+    h2 {
+        padding-left: 21px;
+        padding-top: 68px;
+    }
+}
+
+.restaurants {
+    padding: 27px 20px 67px 20px;
+
+    .vignette {
+        background: $color-white;
+        border-radius: 20px;
+        margin-bottom: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include vignette-shadow;
+
+        a {
+            color: $color-black;
+            position: relative;
+        }
+
+        .tag {
+            position: absolute;
+            right: 12px;
+            top: 13px;
+            background: $color-tertiary;
+            font-family: 'Roboto';
+            font-size: 14px;
+            padding: 6px;
+            color: $color-nouveau;
+            border-radius: 5px;
+        }
+
+        img {
+            width: 100%;
+            height: 174px;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+        }
+
+        h3 {
+            margin-top: 16px;
+            margin-left: 14px;
+            font-family: 'Roboto';
+        }
+
+        p {
+            margin-top: 7px;
+            margin-left: 14px;
+        }
+
+        .heart {
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            right: 24px;
+            bottom: 33px;
+
+            i.far.fa-heart {
+                @include heart-hover;
+            }
+        }
+    }
+}
+
+//---\\---//---\\---//---\\---//---\\
+
+//---\\---MAIN MENU PAGE---\\---//
+//PHOTO//
+.photo-menu img {
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    position: relative;
+}
+
+//TITLE//
+.menu {
+    position: relative;
+    background: $color-grey;
+    border-radius: 20px 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+    z-index: 1;
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .title-restaurant {
+            padding-top: 34px;
+            padding-left: 19px;
+            font-family: 'Shrikhand';
+        }
+
+        i.far.fa-heart {
+            position: relative;
+            right: 38px;
+            padding-top: 39px;
+            @include heart-hover;
+        }
+    }
+}
+
+//MENU PAGES//
+.menu-bloc {
+    margin-top: 45px;
+
+    h2 {
+        margin-left: 21px;
+        text-transform: uppercase;
+        font-size: 16px;
+
+        &:after {
+            content: "";
+            border-bottom: 2px solid $color-tertiary;
+            width: 40px;
+            display: block;
+        }
+    }
+}
+
+.vignette-menu {
+    position: relative;
+    background: $color-white;
+    border-radius: 20px;
+    margin: 14px 12px 14px;
+    padding: 13px 22px 0px 10px;
+    height: 55px;
+    @include vignette-shadow;
+
+    &:hover .animation-circle {
+        animation: checked 200ms ease-in-out forwards;
+    }
+
+    &:hover .details {
+        animation: details 200ms ease-out forwards;
+    }
+
+    &:hover .price {
+        transform: translateX(-35px);
+        transition: 200ms ease-in-out;
+    }
+
+    &:hover .fas.fa-check-circle {
+        transform: rotate(0deg);
+        transition: 400ms ease-in-out;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        // &:hover{
+        //     animation: details 200ms ease-out forwards;
+        // }
+    }
+
+    .name {
+        // font-size: 18px;
+        font-weight: 900;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        padding-bottom: 5px;
+        width: calc(100% - 25px);
+    }
+
+    .accompaniment {
+        font-size: 15px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: calc(100% - 50px);
+    }
+
+    .price {
+        font-size: 15px;
+        font-weight: 900;
+        position: absolute;
+        right: 30px;
+    }
+
+    i.fas.fa-check-circle {
+        // display: none;
+        color: $color-white;
+        transform: rotate(-180deg);
+    }
+}
+
+.animation-circle {
+    transform-origin: right;
+    position: absolute;
+    right: 0px;
+    width: 60px;
+    bottom: 0px;
+    background-color: $color-tertiary;
+    line-height: 68px;
+    text-align: center;
+    border-radius: 0 20px 20px 0;
+    animation: uncheck 200ms ease-out forwards;
+
+}
+
+
+// .vignette-menu:hover .animation-circle{
+//     animation: checked 200ms ease-in-out forwards;
+// }

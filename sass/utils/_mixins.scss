@@ -1,0 +1,31 @@
+@mixin heart-hover {
+    &:hover{
+        font-weight: 900;
+        background: $color-heart;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: hearts 3000ms linear;
+    }
+}
+
+@mixin infos-hover{
+    &:hover {
+        background: $color-info-hover;
+    }
+
+    &:hover i {
+        color: $color-primary;
+    }
+}
+
+@mixin btn-shadow{
+    box-shadow: 0px 10px 20px 5px $color-shadow;
+}
+
+@mixin infos-shadow{
+    box-shadow: 2px 5px 15px 1px $color-shadow;
+}
+
+@mixin vignette-shadow{
+    box-shadow: 2px 2px 15px 1px $color-shadow;
+}
