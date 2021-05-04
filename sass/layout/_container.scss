@@ -64,6 +64,7 @@
             position: relative;
             right: 24px;
             bottom: 33px;
+            cursor: pointer;
 
             i.far.fa-heart {
                 @include heart-hover;
@@ -108,6 +109,7 @@
             position: relative;
             right: 38px;
             padding-top: 39px;
+            cursor: pointer;
             @include heart-hover;
         }
     }
@@ -116,6 +118,8 @@
 //MENU PAGES//
 .menu-bloc {
     margin-top: 45px;
+    opacity: 0;
+    animation: menu-animation 1s forwards;
 
     h2 {
         margin-left: 21px;
@@ -138,7 +142,10 @@
     margin: 14px 12px 14px;
     padding: 13px 22px 0px 10px;
     height: 55px;
+    cursor: pointer;
     @include vignette-shadow;
+    animation: menu-animation 1s forwards;
+    opacity: 0;
 
     &:hover .animation-circle {
         animation: checked 200ms ease-in-out forwards;
@@ -211,8 +218,16 @@
     animation: uncheck 200ms ease-out forwards;
 
 }
+.delay_1{
+    animation-delay: 200ms;
+}
+.delay_2{
+    animation-delay: 400ms;
+}
 
-
+.delay_3{
+    animation-delay: 600ms;
+}
 // .vignette-menu:hover .animation-circle{
 //     animation: checked 200ms ease-in-out forwards;
 // }

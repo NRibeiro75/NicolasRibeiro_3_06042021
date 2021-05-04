@@ -4,18 +4,49 @@
 /*mint*/
 /*background gris*/
 /*background footer*/
+.load {
+  margin: auto;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slide 1s ease 3s forwards;
+}
+@keyframes slide {
+  from {
+    height: 100vh;
+  }
+  to {
+    height: 0vh;
+  }
+}
+
 .loading {
   background: white;
   width: 100%;
-  position: fixed;
   overflow-x: hidden;
   overflow-y: hidden;
+  animation: loader 3000ms forwards;
+}
+@keyframes loader {
+  from {
+    z-index: 9999;
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  to {
+    z-index: -1;
+    opacity: 0;
+  }
 }
 .loading .bar {
   position: relative;
   height: 2px;
-  width: 375px;
-  margin: 0 auto;
+  width: 40%;
+  margin: 0px auto;
   margin-top: 150px;
   background: linear-gradient(0.25turn, #9356DC, #FF79DA, #99E2D0);
 }
@@ -147,17 +178,76 @@
   margin-top: 23px;
 }
 
+@keyframes hearts {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes checked {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes uncheck {
+  0% {
+    transform: scaleX(1);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+@keyframes details {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: calc(60% - -91px);
+  }
+}
+@keyframes menu-animation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes content {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-}
-
-body {
-  max-width: 375px;
-  align-items: center;
 }
 
 ul {
@@ -180,6 +270,10 @@ h1, h2, span, p, li {
 
 i.far.fa-heart {
   font-size: 21px;
+}
+
+.content {
+  animation: content 4000ms forwards;
 }
 
 .btn {
@@ -277,9 +371,11 @@ i.far.fa-heart {
 @keyframes uncheck {
   0% {
     transform: scaleX(1);
+    opacity: 0;
   }
   100% {
     transform: scaleX(0);
+    opacity: 0;
   }
 }
 @keyframes details {
@@ -288,6 +384,33 @@ i.far.fa-heart {
   }
   100% {
     width: calc(60% - -91px);
+  }
+}
+@keyframes menu-animation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes content {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .main {
@@ -346,6 +469,7 @@ i.far.fa-heart {
   position: relative;
   right: 24px;
   bottom: 33px;
+  cursor: pointer;
 }
 .restaurants .vignette .heart i.far.fa-heart:hover {
   font-weight: 900;
@@ -385,6 +509,7 @@ i.far.fa-heart {
   position: relative;
   right: 38px;
   padding-top: 39px;
+  cursor: pointer;
 }
 .menu .title i.far.fa-heart:hover {
   font-weight: 900;
@@ -396,6 +521,8 @@ i.far.fa-heart {
 
 .menu-bloc {
   margin-top: 45px;
+  opacity: 0;
+  animation: menu-animation 1s forwards;
 }
 .menu-bloc h2 {
   margin-left: 21px;
@@ -416,7 +543,10 @@ i.far.fa-heart {
   margin: 14px 12px 14px;
   padding: 13px 22px 0px 10px;
   height: 55px;
+  cursor: pointer;
   box-shadow: 2px 2px 15px 1px #d5d5d5;
+  animation: menu-animation 1s forwards;
+  opacity: 0;
 }
 .vignette-menu:hover .animation-circle {
   animation: checked 200ms ease-in-out forwards;
@@ -475,6 +605,18 @@ i.far.fa-heart {
   animation: uncheck 200ms ease-out forwards;
 }
 
+.delay_1 {
+  animation-delay: 200ms;
+}
+
+.delay_2 {
+  animation-delay: 400ms;
+}
+
+.delay_3 {
+  animation-delay: 600ms;
+}
+
 @keyframes hearts {
   0% {
     opacity: 0.2;
@@ -497,9 +639,11 @@ i.far.fa-heart {
 @keyframes uncheck {
   0% {
     transform: scaleX(1);
+    opacity: 0;
   }
   100% {
     transform: scaleX(0);
+    opacity: 0;
   }
 }
 @keyframes details {
@@ -508,6 +652,33 @@ i.far.fa-heart {
   }
   100% {
     width: calc(60% - -91px);
+  }
+}
+@keyframes menu-animation {
+  0% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+@keyframes content {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
