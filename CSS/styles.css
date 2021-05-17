@@ -5,6 +5,7 @@
 /*background gris*/
 /*background footer*/
 .load {
+  position: fixed;
   margin: auto;
   height: 100vh;
   width: 100%;
@@ -23,7 +24,7 @@
 }
 
 .loading {
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -138,12 +139,12 @@
   height: 50px;
   box-shadow: inset 0px 2px 2px #d5d5d5;
   line-height: 50px;
+  text-align: center;
   font-size: 16px;
   font-weight: 900;
 }
 .header .map i.fas.fa-map-marker-alt {
   padding-right: 18px;
-  margin-left: 104px;
 }
 
 .description {
@@ -308,6 +309,20 @@ i.far.fa-heart {
   margin-left: 32px;
   margin-right: 20px;
 }
+@media (min-width: 1024px) {
+  #infos ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 768px) {
+  #infos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 
 .Fonctionnement {
   margin-left: 21px;
@@ -415,14 +430,31 @@ i.far.fa-heart {
 }
 .main {
   background: #f6f6f6;
+  margin-top: 68px;
 }
 .main h2 {
   padding-left: 21px;
-  padding-top: 68px;
+  padding-top: 58px;
 }
 
 .restaurants {
   padding: 27px 20px 67px 20px;
+}
+@media (min-width: 1024px) {
+  .restaurants {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 768px) {
+  .restaurants {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .restaurants .vignette {
   background: #fff;
@@ -432,6 +464,16 @@ i.far.fa-heart {
   flex-direction: column;
   justify-content: center;
   box-shadow: 2px 2px 15px 1px #d5d5d5;
+}
+@media (min-width: 1024px) {
+  .restaurants .vignette {
+    width: 335px;
+  }
+}
+@media (min-width: 768px) {
+  .restaurants .vignette {
+    width: 528px;
+  }
 }
 .restaurants .vignette a {
   color: black;
@@ -579,7 +621,7 @@ i.far.fa-heart {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: calc(100% - 50px);
+  width: calc(100% - 60px);
 }
 .vignette-menu .price {
   font-size: 15px;

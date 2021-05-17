@@ -13,13 +13,13 @@
         height: 50px;
         box-shadow: inset 0px 2px 2px $color-shadow;
         line-height: 50px;
-        // text-align: center;
+        text-align: center;
         font-size: 16px;
         font-weight: 900;
 
         & i.fas.fa-map-marker-alt {
             padding-right: 18px;
-            margin-left: 104px;
+            // margin-left: 104px;
         }
     }
 }

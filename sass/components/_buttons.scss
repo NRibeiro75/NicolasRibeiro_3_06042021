@@ -5,7 +5,8 @@
     margin-bottom: 57px;
     border-radius: 50px;
     height: 50px;
-    background: linear-gradient(to bottom, $color-secondary, $color-primary);
+    // background: linear-gradient(to bottom, $color-secondary, $color-primary);
+    @include linear-gradient;
     border: none;
     color: $color-white;
     width: 218px;
@@ -24,3 +25,7 @@
 .btn-2{
     width:186px;
 }
+
+
+
+// box-shadow: inset 0 0 100px 100px rgb(255 255 255 / 15%), 0px 10px 20px 5px #a3a1a1;

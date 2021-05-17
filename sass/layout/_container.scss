@@ -4,15 +4,28 @@
 //---\\---MAIN HOME PAGE---\\---//
 .main {
     background: #f6f6f6;
+    margin-top:68px;
 
     h2 {
         padding-left: 21px;
-        padding-top: 68px;
+        padding-top: 58px;
     }
 }
 
 .restaurants {
     padding: 27px 20px 67px 20px;
+    @media (min-width: 1024px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    @media (min-width: 768px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .vignette {
         background: $color-white;
@@ -22,6 +35,12 @@
         flex-direction: column;
         justify-content: center;
         @include vignette-shadow;
+        @media (min-width:1024px){
+            width: 335px;
+        }
+        @media (min-width: 768px){
+            width:528px;
+        }
 
         a {
             color: $color-black;
@@ -188,7 +207,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
-        width: calc(100% - 50px);
+        width: calc(100% - 60px);
     }
 
     .price {
@@ -231,3 +250,7 @@
 // .vignette-menu:hover .animation-circle{
 //     animation: checked 200ms ease-in-out forwards;
 // }
+
+.content{
+    // display: none;
+}

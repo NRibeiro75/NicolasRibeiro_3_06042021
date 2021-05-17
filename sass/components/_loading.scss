@@ -1,13 +1,17 @@
 //LOADING BAR//
 .load {
+    position:fixed;
+    // right:0;
+    // left:0;
     margin:auto;
-    height:100vh;
+    height:100vh; 
     width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: slide 1s ease 3s forwards;
     // animation: loader 3000ms forwards;
+    animation: slide 1s ease 3s forwards;
+    
     @keyframes slide {
         from {
             height: 100vh;
@@ -20,10 +24,12 @@
 }
 
 .loading {
-    background: white;
+    // position:fixed;
+    // right:0;
+    // left:0;
+    background: hsla(0,0%,100%,.9);
     width: 100%;
     // height: 152px;
-    // position: fixed;
     overflow-x: hidden;
     overflow-y: hidden;
     animation: loader 3000ms forwards;
