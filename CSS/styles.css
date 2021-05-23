@@ -334,7 +334,7 @@ i.far.fa-heart {
 }
 @media (min-width: 1024px) {
   .restaurants .vignette {
-    width: 335px;
+    width: 500px;
   }
 }
 
@@ -346,24 +346,21 @@ i.far.fa-heart {
     border-radius: 20px 20px 20px 20px;
   }
 }
-
 @media (min-width: 1024px) {
-  .title-restaurant {
+  .menu .title-restaurant {
     font-size: 40px;
   }
 }
-
 @media (min-width: 1024px) {
-  .carte {
+  .menu .carte {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
 }
-
 @media (min-width: 1024px) {
-  .vignette-menu {
+  .menu .vignette-menu {
     width: 350px;
   }
 }
@@ -527,7 +524,7 @@ i.far.fa-heart {
 }
 @media (min-width: 1024px) {
   .restaurants .vignette {
-    width: 335px;
+    width: 500px;
   }
 }
 
@@ -539,24 +536,21 @@ i.far.fa-heart {
     border-radius: 20px 20px 20px 20px;
   }
 }
-
 @media (min-width: 1024px) {
-  .title-restaurant {
+  .menu .title-restaurant {
     font-size: 40px;
   }
 }
-
 @media (min-width: 1024px) {
-  .carte {
+  .menu .carte {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
 }
-
 @media (min-width: 1024px) {
-  .vignette-menu {
+  .menu .vignette-menu {
     width: 350px;
   }
 }
