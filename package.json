@@ -7,7 +7,12 @@
     "sass": "sass --watch sass/main.scss:./CSS/styles.css",
     "prefix": "postcss ./CSS/styles.css --use autoprefixer -d ./CSS/prefixed/"
   },
-  "author": "",
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NRibeiro75/NicolasRibeiro_3_06042021"
+  },
+  "author": "Nicolas",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.32.10"
