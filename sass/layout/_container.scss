@@ -1,6 +1,11 @@
 @import "../utils/mixins";
 @import "../utils/keyframes";
 
+//---\\---RESPONSIVE---\\---//
+@include desktop;
+@include tablet;
+
+
 //---\\---MAIN HOME PAGE---\\---//
 .main {
     background: #f6f6f6;
@@ -14,18 +19,6 @@
 
 .restaurants {
     padding: 27px 20px 67px 20px;
-    @media (min-width: 1024px){
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    @media (min-width: 768px)and (max-width:1023px){
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 
     .vignette {
         background: $color-white;
@@ -35,12 +28,6 @@
         flex-direction: column;
         justify-content: center;
         @include vignette-shadow;
-        @media (min-width:1024px){
-            width: 335px;
-        }
-        @media (min-width: 768px) and (max-width:1023px){
-            width:528px;
-        }
 
         a {
             color: $color-black;
@@ -101,9 +88,6 @@
     object-fit: cover;
     z-index: -1;
     position: relative;
-    @media (min-width: 1024px){
-        height:65vh;
-    }
 }
 
 //TITLE//
@@ -115,12 +99,6 @@
     flex-direction: column;
     margin-top: -50px;
     z-index: 1;
-    @media (min-width: 1024px){
-        margin-left: 50px;
-        margin-right: 50px;
-        padding-bottom: 90px;
-        border-radius: 20px 20px 20px 20px;
-    }
 
     .title {
         display: flex;
@@ -131,9 +109,6 @@
             padding-top: 34px;
             padding-left: 19px;
             font-family: 'Shrikhand';
-            @media (min-width: 1024px){
-                font-size:40px;
-            }
         }
 
         i.far.fa-heart {
@@ -142,15 +117,6 @@
             padding-top: 39px;
             cursor: pointer;
             @include heart-hover;
-        }
-    }
-
-    .carte{
-        @media (min-width: 1024px){
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
         }
     }
 }
@@ -186,9 +152,6 @@
     @include vignette-shadow;
     animation: menu-animation 1s forwards;
     opacity: 0;
-    @media (min-width: 1024px){
-        width:350px;
-    }
 
     &:hover .animation-circle {
         animation: checked 200ms ease-in-out forwards;
@@ -271,6 +234,8 @@
 .delay_3{
     animation-delay: 600ms;
 }
+
+
 // .vignette-menu:hover .animation-circle{
 //     animation: checked 200ms ease-in-out forwards;
 // }

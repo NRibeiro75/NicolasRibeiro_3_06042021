@@ -26,15 +26,12 @@ a{
 h1,h2,span,p,li{
     font-family: $font-text;
 }
+
 i.far.fa-heart{
     font-size:21px;
-    @media (min-width: 1024px){
-        font-size:30px;
-    }
 }
 
 
 .content{
     animation: content 4000ms forwards;
-    
 }

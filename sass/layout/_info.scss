@@ -1,5 +1,11 @@
 @import "../utils/mixins";
-//INFOS//
+
+//---\\---RESPONSIVE---\\---//
+@include desktop;
+@include tablet;
+
+
+//---\\---INFOS---\\---//
 #infos {
     display: flex;
     flex-direction: column;
@@ -7,16 +13,6 @@
     ul {
         margin-left: 32px;
         margin-right: 20px;
-        @media (min-width:1024px){
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-        }
-        @media (min-width: 425px){
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
     }
 }
 
