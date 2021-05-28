@@ -155,10 +155,12 @@
 
     &:hover .animation-circle {
         animation: checked 200ms ease-in-out forwards;
+        -webkit-animation: checked 200ms ease-in-out forwards;
     }
 
     &:hover .details {
         animation: details 200ms ease-out forwards;
+        -webkit-animation: details 200ms ease-out forwards;
     }
 
     &:hover .price {

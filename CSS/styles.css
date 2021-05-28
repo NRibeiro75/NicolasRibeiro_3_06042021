@@ -323,8 +323,7 @@ i.far.fa-heart {
     justify-content: space-around;
   }
 }
-
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .restaurants {
     display: flex;
     flex-direction: row;
@@ -332,13 +331,12 @@ i.far.fa-heart {
     flex-wrap: wrap;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .restaurants .vignette {
     width: 500px;
   }
 }
-
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .menu {
     margin-left: 50px;
     margin-right: 50px;
@@ -346,12 +344,12 @@ i.far.fa-heart {
     border-radius: 20px 20px 20px 20px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .menu .title-restaurant {
     font-size: 40px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .menu .carte {
     display: flex;
     flex-direction: row;
@@ -359,12 +357,11 @@ i.far.fa-heart {
     flex-wrap: wrap;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .menu .vignette-menu {
     width: 350px;
   }
 }
-
 @media (min-width: 425px) {
   #infos ul {
     display: flex;
@@ -442,6 +439,13 @@ i.far.fa-heart {
   padding-right: 10px;
 }
 
+@media (min-width: 1024px) {
+  #infos ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 @keyframes hearts {
   0% {
     opacity: 0.2;
@@ -513,8 +517,7 @@ i.far.fa-heart {
     justify-content: space-around;
   }
 }
-
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .restaurants {
     display: flex;
     flex-direction: row;
@@ -522,13 +525,12 @@ i.far.fa-heart {
     flex-wrap: wrap;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .restaurants .vignette {
     width: 500px;
   }
 }
-
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .menu {
     margin-left: 50px;
     margin-right: 50px;
@@ -536,12 +538,12 @@ i.far.fa-heart {
     border-radius: 20px 20px 20px 20px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .menu .title-restaurant {
     font-size: 40px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .menu .carte {
     display: flex;
     flex-direction: row;
@@ -549,12 +551,11 @@ i.far.fa-heart {
     flex-wrap: wrap;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (min-width: 1024px) {
   .menu .vignette-menu {
     width: 350px;
   }
 }
-
 @media (min-width: 425px) {
   #infos ul {
     display: flex;
@@ -723,9 +724,11 @@ i.far.fa-heart {
 }
 .vignette-menu:hover .animation-circle {
   animation: checked 200ms ease-in-out forwards;
+  -webkit-animation: checked 200ms ease-in-out forwards;
 }
 .vignette-menu:hover .details {
   animation: details 200ms ease-out forwards;
+  -webkit-animation: details 200ms ease-out forwards;
 }
 .vignette-menu:hover .price {
   transform: translateX(-35px);

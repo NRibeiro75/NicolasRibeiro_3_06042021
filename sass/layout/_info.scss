@@ -52,3 +52,16 @@
         padding-right: 10px;
     }
 }
+
+@media (min-width:1024px) {
+    #infos {
+        ul {
+           
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+            
+        }
+
+    }
+}

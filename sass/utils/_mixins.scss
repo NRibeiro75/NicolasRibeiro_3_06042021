@@ -50,15 +50,14 @@
 
 @mixin desktop {
     //---\\---INFOS---\\---//
+    @media (min-width:1024px) {
     #infos {
         ul {
-            @media (min-width:1024px) {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-            }
+           
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
         }
-
     }
     //---\\---//---\\---//---\\---//---\\
 
@@ -109,6 +108,7 @@
         }
     }
     //---\\---//---\\---//---\\---//---\\
+}
 }
 
 @mixin tablet{
