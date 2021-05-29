@@ -527,7 +527,7 @@ i.far.fa-heart {
   .restaurants {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
   .restaurants .vignette {
