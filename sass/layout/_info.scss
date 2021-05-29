@@ -1,8 +1,7 @@
 @import "../utils/mixins";
 
-//---\\---RESPONSIVE---\\---//
-@include desktop;
-@include tablet;
+
+
 
 
 //---\\---INFOS---\\---//
@@ -52,8 +51,8 @@
         padding-right: 10px;
     }
 }
-
-@media (min-width:1024px) {
+//DESKTOP//
+@media (min-width:$desktop) {
     #infos {
         ul {
            
@@ -63,5 +62,16 @@
             
         }
 
+    }
+}
+
+//TABLET//
+@media (min-width: 425px){
+    #infos{
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
     }
 }

@@ -29,3 +29,18 @@
         color: $color-white;
     }
 }
+
+//DESKTOP//
+@media (min-width:$desktop){
+    .footer-bloc{
+        padding-left: 0px;
+
+        .logo-bottom{
+            text-align: center;
+        }
+        ul{
+            display: flex;
+            justify-content:space-evenly;
+        }
+    }
+}

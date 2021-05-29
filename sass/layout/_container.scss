@@ -2,8 +2,8 @@
 @import "../utils/keyframes";
 
 //---\\---RESPONSIVE---\\---//
-@include desktop;
-@include tablet;
+// @include desktop;
+// @include tablet;
 
 
 //---\\---MAIN HOME PAGE---\\---//
@@ -75,6 +75,34 @@
             i.far.fa-heart {
                 @include heart-hover;
             }
+        }
+    }
+}
+
+//DESKTOP//
+@media (min-width: $desktop){
+    .restaurants{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .vignette{
+            width: 500px;
+        }
+    }
+
+}
+//TABLET//
+@media (min-width:$tablet) and (max-width:1023px){
+    .restaurants{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .vignette{
+            width:528px;
         }
     }
 }
@@ -223,19 +251,45 @@
     animation: uncheck 200ms ease-out forwards;
 
 }
+
 .delay_1{
     animation-delay: 200ms;
 }
 .delay_2{
     animation-delay: 400ms;
 }
-
 .delay_3{
     animation-delay: 600ms;
 }
 
+//DESKTOP//
+@media (min-width: $desktop){
+    .menu{
+        margin-left: 50px;
+        margin-right: 50px;
+        padding-bottom: 90px;
+        border-radius: 20px 20px 20px 20px;
 
-// .vignette-menu:hover .animation-circle{
-//     animation: checked 200ms ease-in-out forwards;
-// }
+        .title-restaurant{
+            font-size: 40px;
+        }
+        .carte{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .vignette-menu{
+            width: 350px;
+        }
+    }
+}
+//TABLET//
+@media (min-width: $tablet){
+    .photo-menu img{
+        height:65vh;
+    }
+}
+
+
 
