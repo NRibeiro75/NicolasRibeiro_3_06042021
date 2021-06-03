@@ -518,7 +518,6 @@ i.far.fa-heart {
   font-weight: 900;
   background: linear-gradient(45deg, #FF79DA, #9356DC);
   -webkit-text-fill-color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
   animation: hearts 2000ms linear;
 }
@@ -581,7 +580,6 @@ i.far.fa-heart {
   font-weight: 900;
   background: linear-gradient(45deg, #FF79DA, #9356DC);
   -webkit-text-fill-color: transparent;
-  background-clip: text;
   -webkit-background-clip: text;
   animation: hearts 2000ms linear;
 }
