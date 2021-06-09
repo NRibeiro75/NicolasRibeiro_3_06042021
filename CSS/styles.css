@@ -294,6 +294,8 @@ i.far.fa-heart {
   margin-bottom: 57px;
   border-radius: 50px;
   height: 50px;
+  line-height: 50px;
+  text-align: center;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   border: none;
   color: #fff;

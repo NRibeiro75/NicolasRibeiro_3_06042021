@@ -1,11 +1,13 @@
 @import "../utils/mixins";
 //---\\---BUTTON HOME PAGE---\\---//
+
 .btn{
     margin-top: 31px;
     margin-bottom: 57px;
     border-radius: 50px;
     height: 50px;
-    // background: linear-gradient(to bottom, $color-secondary, $color-primary);
+    line-height:50px;
+    text-align: center;
     @include linear-gradient;
     border: none;
     color: $color-white;
@@ -13,9 +15,7 @@
     align-self: center;
     font-weight: bold;
     @include btn-shadow;
-    // a{
-    //     color:$color-white;
-    // }
+
     &:hover{
         @include btn-lighten;
     }
